@@ -13,6 +13,16 @@ dessertRadio.addEventListener('click', grabDessert);
 letsCookButton.addEventListener('click', displayMeal);
 
 /* Functions */
-mealRandomizer() {
-  
+function mealRandomizer(array) {
+  return Math.floor(Math.random() * array.length);
 }
+
+function grabSide() {
+  var selectedSide = sides[mealRandomizer(sides)];
+  return selectedSide;
+}
+//mirror grab side for Main dish
+
+//mirror grab side for dessert
+
+//
