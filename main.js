@@ -11,3 +11,8 @@ sideRadio.addEventListener('click', grabSide);
 mainDishRadio.addEventListener('click', grabMainDish);
 dessertRadio.addEventListener('click', grabDessert);
 letsCookButton.addEventListener('click', displayMeal);
+
+/* Functions */
+mealRandomizer() {
+  
+}
