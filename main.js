@@ -25,4 +25,6 @@ function grabSide() {
 
 //mirror grab side for dessert
 
-//
+//displayMeal function, takes in conditional
+//about above event listeners and displays respective
+//meal type
