@@ -4,7 +4,9 @@ var mainDishRadio = document.querySelector('.main-dish');
 var dessertRadio = document.querySelector('.dessert');
 var entireMealRadio = document.querySelector('.entire-meal');
 var letsCookButton = document.querySelector('.lets-cook');
-var foodSelectionSection= document.querySelector('.food-selection');
+var yourFoodSelection = document.querySelector('.your-food-selection');
+var sectionTwo = document.querySelector('.sec-two');
+var potImage = document.querySelector('#pot');
 var selectedDish;
 
 
@@ -35,7 +37,8 @@ function grabDessert() {
 
 
 function displayMeal() {
-  foodSelectionSection.classList.remove('hidden');
+  potImage.classList.add('hidden');
+
   if (sideRadio.checked) {
     return selectedDish;
   } else if (mainDishRadio.checked){
@@ -43,9 +46,13 @@ function displayMeal() {
   } else if (dessertRadio.checked){
     return selectedDish;
   } else {
-    return "You're not hungry?"
+    return "You're not hungry?";
   }
+
   yourFoodSelection.innerHTML = `
+  <section class="food">
   <h3>You should make:</h3>
-  <h4>${selectedSide}</h4> `
+  <h4>${selectedDish}</h4>
+  <button class="clear-button" type="button">CLEAR</button></section>
+  `
 };
