@@ -9,7 +9,7 @@
       <h1>What's for Dinner</h1>
       <button class="add-recipe-button" type="button">Add A Recipe</button>
     </nav>
-    <sec class="sec-one">
+    <section class="sec-one">
       <h2>What are you looking for?<span class="asterisk">*</span></h2>
       <input type="radio" class="side" name="food" value="side">
       <label for="side">Side</label><br>
@@ -20,10 +20,13 @@
       <input type="radio" class="entire-meal" name="food" value="entire-meal">
       <label for="entire-meal">Entire Meal</label><br>
       <button class="lets-cook" type="button">Let's Cook!</button>
-    </sec>
-    <sec class="sec-two">
-      <img src="assets/cookpot.svg" alt="cookpot">
-    </sec>
+    </section>
+    <section class="sec-two">
+      <section class="your-food-selection"></section>
+      <img id="pot" src="assets/cookpot.svg" alt="cookpot">
+    </section>
+  </section>
   </body>
   <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="foodData.js"></script>
 </html>
