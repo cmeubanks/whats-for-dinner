@@ -31,16 +31,18 @@ nav {
   color: #ee5253;
 }
 /*boxes*/
+.box {
+display: flex;
+justify-content: center;
+}
 section {
   background: rgba(225, 225, 225, .9);
-  display: inline-flex;
-  flex-direction: column;
 }
 .sec-one {
-margin-right: 5%;
+
 }
 .sec-two {
-margin-left: 5%;
+
 }
 h3 {
   font-style: italic;
@@ -53,10 +55,12 @@ img {
 }
 
 /*buttons*/
+button {
+  border-radius: 6px;
+  border: none;
+}
 .add-recipe-button {
-  background: rgba(225, 225, 225, .9);
-
-
+  background: #EFEFEF;
 }
 .lets-cook {
   background: #0fb9b1;

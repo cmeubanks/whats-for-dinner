@@ -50,10 +50,10 @@ function grabEntireMeal() {
 function switchView() {
 potImage.classList.add('hidden');
 foodSelection.classList.remove('hidden');
+clearButton.classList.remove('hidden');
 }
 
 function displayMeal() {
-//  potImage.classList.add('hidden');
 switchView();
 
   if (sideRadio.checked) {
@@ -66,11 +66,3 @@ switchView();
     return yourMealChoice.innerText = `${main} with a side of ${side} and ${dessert} for dessert!`;
   }
 }
-
-  //yourFoodSelection.innerHTML = `
-  //<section class="food">
-  //<h3>You should make:</h3>
-  //<h4>${selectedDish}</h4>
-  //<button class="clear-button" type="button">CLEAR</button></section>
-//  `
-//};
