@@ -4,7 +4,9 @@ var mainDishRadio = document.querySelector('.main-dish');
 var dessertRadio = document.querySelector('.dessert');
 var entireMealRadio = document.querySelector('entire-meal');
 var letsCookButton = document.querySelector('.lets-cook');
-
+var selectedSide;
+var selectedMainDish;
+var selectedDessert;
 
 /* Event Listeners */
 sideRadio.addEventListener('click', grabSide);
@@ -18,31 +20,34 @@ function mealRandomizer(array) {
 }
 
 function grabSide() {
-  var selectedSide = sides[mealRandomizer(sides)];
-  return selectedSide;
+  selectedSide = sides[mealRandomizer(sides)];
+  //return selectedSide;
 }
 function grabMainDish() {
-  var selectedMainDish = mains[mealRandomizer(mains)];
-  return selectedMainDish;
+  selectedMainDish = mains[mealRandomizer(mains)];
+  //return selectedMainDish;
 }
 function grabDessert() {
-  var selectedDessert = desserts[mealRandomizer(desserts)];
-  return selectedDessert;
+  selectedDessert = desserts[mealRandomizer(desserts)];
+  //return selectedDessert;
 }
 //displayMeal function, takes in conditional
 //about above event listeners and displays respective
 //meal type
 //Questions: can I use .value to grab selected user radio button?
 //if a value is grabbed, run true false statements to determine if the radio button
-//function contains a value -try to add a parameter and variable if this doesn't work the first time
+//function contains a value
+//try to add a parameter and variable if this doesn't work the first time
+
 function displayMeal() {
-  if (grabSide() == true) {
-    return selectedSide;
-  } else if (grabMainDish() == true) {
-    return selectedMainDish;
-  } else if (grabDessert() == true) {
-    return selectedDessert;
+  if (selectedMainDish && selectedDessert == undefined) {
+   return grabSide();
+  } else if (selectedSide && selectedDessert == undefined) {
+   return grabMainDish();
+  } else if (selectedSide && selectedMainDish == undefined) {
+   return grabDessert();
   } else {
     return "You're not hungry?"
   }
 }
+//var foodToShow = displayMeal();
