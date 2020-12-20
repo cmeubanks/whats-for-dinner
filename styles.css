@@ -24,39 +24,50 @@ nav {
   overflow: hidden;
   position: relative;
   display: flex;
-
+  justify-content: space-between;
+}
+/* Misc */
+.asterisk {
+  color: #ee5253;
 }
 /*boxes*/
 section {
   background: rgba(225, 225, 225, .9);
-  margin-top: 4%;
-  width: 36%;
-  height: 39%;
   display: inline-flex;
-  justify-content: center;
   flex-direction: column;
-
 }
-.radio {
-
+.sec-one {
+margin-right: 5%;
+}
+.sec-two {
+margin-left: 5%;
+}
+h3 {
+  font-style: italic;
 }
 img {
   max-width: 1500px;
   width: 25%;
+  display: block;
+  margin: 0 auto;
 }
-.asterisk {
-  color: #ee5253;
-}
+
 /*buttons*/
 .add-recipe-button {
-  background: #95a5a6;
-  position: absolute;
-  flex-direction: row;
+  background: rgba(225, 225, 225, .9);
+
 
 }
 .lets-cook {
   background: #0fb9b1;
 }
 .clear-button {
-  background: #0fb9b1;
+  background: #95a5a6;
+  color: white;
 }
+
+
+/* removed from section
+margin-top: 4%;
+width: 36%;
+height: 39%;
