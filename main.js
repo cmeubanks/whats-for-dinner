@@ -21,15 +21,15 @@ function mealRandomizer(array) {
 
 function grabSide() {
   selectedSide = sides[mealRandomizer(sides)];
-  //return selectedSide;
+  return selectedSide;
 }
 function grabMainDish() {
   selectedMainDish = mains[mealRandomizer(mains)];
-  //return selectedMainDish;
+  return selectedMainDish;
 }
 function grabDessert() {
   selectedDessert = desserts[mealRandomizer(desserts)];
-  //return selectedDessert;
+  return selectedDessert;
 }
 //displayMeal function, takes in conditional
 //about above event listeners and displays respective
@@ -40,14 +40,26 @@ function grabDessert() {
 //try to add a parameter and variable if this doesn't work the first time
 
 function displayMeal() {
-  if (selectedMainDish && selectedDessert == undefined) {
-   return grabSide();
-  } else if (selectedSide && selectedDessert == undefined) {
-   return grabMainDish();
-  } else if (selectedSide && selectedMainDish == undefined) {
-   return grabDessert();
+  if (sideRadio.checked) {
+    return selectedSide;
+  } else if (mainDishRadio.checked){
+    return selectedMainDish;
+  } else if (dessertRadio.checked){
+    return selectedDessert;
   } else {
-    return "You're not hungry?"
+    return "You're not hungry?";
   }
 }
+
+//function displayMeal() {
+  //if (selectedMainDish && selectedDessert === undefined) {
+   //return selectedSide;
+// } else if (selectedSide && selectedDessert === undefined) {
+  // return selectedMainDish;
+// } else if (selectedSide && selectedMainDish === undefined) {
+  // return selectedDessert;
+//  } else {
+  //  return "You're not hungry?"
+//  }
+//}
 //var foodToShow = displayMeal();
