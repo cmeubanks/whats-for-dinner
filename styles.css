@@ -15,6 +15,9 @@ html {
 body {
 
 }
+.hidden {
+  display: none;
+}
 nav {
   background: #0fb9b1;
   height: 83px;
@@ -24,7 +27,7 @@ nav {
 
 }
 /*boxes*/
-sec {
+section {
   background: rgba(225, 225, 225, .9);
   margin-top: 4%;
   width: 36%;

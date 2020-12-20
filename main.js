@@ -2,11 +2,11 @@
 var sideRadio = document.querySelector('.side');
 var mainDishRadio = document.querySelector('.main-dish');
 var dessertRadio = document.querySelector('.dessert');
-var entireMealRadio = document.querySelector('entire-meal');
+var entireMealRadio = document.querySelector('.entire-meal');
 var letsCookButton = document.querySelector('.lets-cook');
-var selectedSide;
-var selectedMainDish;
-var selectedDessert;
+var foodSelectionSection= document.querySelector('.food-selection');
+var selectedDish;
+
 
 /* Event Listeners */
 sideRadio.addEventListener('click', grabSide);
@@ -14,52 +14,38 @@ mainDishRadio.addEventListener('click', grabMainDish);
 dessertRadio.addEventListener('click', grabDessert);
 letsCookButton.addEventListener('click', displayMeal);
 
+
 /* Functions */
 function mealRandomizer(array) {
   return Math.floor(Math.random() * array.length);
-}
+};
 
 function grabSide() {
-  selectedSide = sides[mealRandomizer(sides)];
-  return selectedSide;
-}
+  selectedDish = sides[mealRandomizer(sides)];
+  return selectedDish;
+};
 function grabMainDish() {
-  selectedMainDish = mains[mealRandomizer(mains)];
-  return selectedMainDish;
-}
+  selectedDish = mains[mealRandomizer(mains)];
+  return selectedDish;
+};
 function grabDessert() {
-  selectedDessert = desserts[mealRandomizer(desserts)];
-  return selectedDessert;
-}
-//displayMeal function, takes in conditional
-//about above event listeners and displays respective
-//meal type
-//Questions: can I use .value to grab selected user radio button?
-//if a value is grabbed, run true false statements to determine if the radio button
-//function contains a value
-//try to add a parameter and variable if this doesn't work the first time
+  selectedDish = desserts[mealRandomizer(desserts)];
+  return selectedDish;
+};
+
 
 function displayMeal() {
+  foodSelectionSection.classList.remove('hidden');
   if (sideRadio.checked) {
-    return selectedSide;
+    return selectedDish;
   } else if (mainDishRadio.checked){
-    return selectedMainDish;
+    return selectedDish;
   } else if (dessertRadio.checked){
-    return selectedDessert;
+    return selectedDish;
   } else {
-    return "You're not hungry?";
+    return "You're not hungry?"
   }
-}
-
-//function displayMeal() {
-  //if (selectedMainDish && selectedDessert === undefined) {
-   //return selectedSide;
-// } else if (selectedSide && selectedDessert === undefined) {
-  // return selectedMainDish;
-// } else if (selectedSide && selectedMainDish === undefined) {
-  // return selectedDessert;
-//  } else {
-  //  return "You're not hungry?"
-//  }
-//}
-//var foodToShow = displayMeal();
+  yourFoodSelection.innerHTML = `
+  <h3>You should make:</h3>
+  <h4>${selectedSide}</h4> `
+};
