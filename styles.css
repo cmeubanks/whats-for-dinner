@@ -34,14 +34,23 @@ nav {
 .box {
 display: flex;
 justify-content: center;
+margin-top: 3%;
 }
 section {
   background: rgba(225, 225, 225, .9);
 }
 .sec-one {
-
+margin-right: 10%;
+box-sizing: border-box;
+width: 30%;
+padding-left: 2%;
+padding-bottom: 3%;
+padding-top: 3%;
 }
 .sec-two {
+margin-left: 10%;
+box-sizing: border-box;
+width: 30%;
 
 }
 h3 {
@@ -52,6 +61,7 @@ img {
   width: 25%;
   display: block;
   margin: 0 auto;
+  padding-top: 20%;
 }
 
 /*buttons*/
@@ -64,12 +74,20 @@ button {
 }
 .lets-cook {
   background: #0fb9b1;
+  box-sizing: border-box;
+  width: 175px;
+  height: 30px;
 }
 .clear-button {
   background: #95a5a6;
   color: white;
 }
+label {
 
+}
+input {
+  margin-bottom: 4%
+}
 
 /* removed from section
 margin-top: 4%;
