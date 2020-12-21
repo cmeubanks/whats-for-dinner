@@ -4,7 +4,6 @@ var mainDishRadio = document.querySelector('.main-dish');
 var dessertRadio = document.querySelector('.dessert');
 var entireMealRadio = document.querySelector('.entire-meal');
 var letsCookButton = document.querySelector('.lets-cook');
-
 var foodSelection = document.querySelector('.food-selection');
 var yourMealChoice = document.querySelector('.your-meal-choice');
 var sectionTwo = document.querySelector('.sec-two');
@@ -29,7 +28,6 @@ entireMealRadio.addEventListener('click', grabEntireMeal);
 function mealRandomizer(array) {
   return Math.floor(Math.random() * array.length);
 };
-
 function grabSide() {
   selectedDish = sides[mealRandomizer(sides)];
   return selectedDish;
