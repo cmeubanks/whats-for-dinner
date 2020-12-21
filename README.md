@@ -5,8 +5,8 @@ Interactive webpage that will generate a random meal for the user based on the s
 side dish, main dish, dessert, or entire meal
 
 ### How it Works
-The user must select one of four radio buttons and click the "Let's Cook" button to have a meal idea randomly generated.
-The website stores arrays of different food selections for the event listener functions to grab from. Once the webpages registers a 'click', the functions are invoked and return the user's proposed meal selection in an element container.
+The user must select one of four radio buttons and then click the "Let's Cook" button to have a meal idea randomly generated.
+The website stores arrays of different food selections for the event listener functions to grab the random meal choice. Once the website registers a 'click', the functions are invoked and return the user's proposed, random meal selection in an HTML element container.
 
 ### Technologies Implemented:
 - Javascript
@@ -16,8 +16,9 @@ The website stores arrays of different food selections for the event listener fu
 - Chrome Extensions: ColorPick
 
 ### Future Updates
-The ability for the user to add their own recipes, and like their favorite recipes. CSS styling will be tweaked so that
-the webpage will respond to the user's screen size and adapt to mobile and large screens.
+- The ability for the user to add their own recipes and also "like" their favorite recipes.
+- Clear button to be enabled
+- CSS styling will be tweaked so that the webpage will respond to the user's screen size and adapt to mobile and large screens.
 
 ******************************************************************
 Github Pages Link: https://cmeubanks.github.io/whats-for-dinner/
