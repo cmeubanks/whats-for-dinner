@@ -7,8 +7,9 @@
   <body>
     <nav class="primary-nav">
       <h1>What's for Dinner</h1>
-      <button class="add-recipe-button" type="button">Add A Recipe</button>
+      <button class="add-recipe-button" type="button">ADD A RECIPE</button>
     </nav>
+    <div class="box">
     <section class="sec-one">
       <h2>What are you looking for?<span class="asterisk">*</span></h2>
       <input type="radio" class="side" name="food" value="side">
@@ -19,18 +20,19 @@
       <label for="dessert">Dessert</label><br>
       <input type="radio" class="entire-meal" name="food" value="entire-meal">
       <label for="entire-meal">Entire Meal</label><br>
-      <button class="lets-cook" type="button">Let's Cook!</button>
+      <button class="lets-cook" type="button">LET'S COOK!</button>
     </section>
-
     <section class="sec-two">
       <img id="pot" src="assets/cookpot.svg" alt="cookpot">
       <div class="food-selection hidden">
         <h3>You should make:</h3>
-        <button class="clear-button" type="button">CLEAR</button>
         <h4 class="your-meal-choice"</h4>
       </div>
-  </section>
-
+      <div>
+        <button class="clear-button hidden" type="button">CLEAR</button>
+      </div>
+    </section>
+  </div>
   </body>
   <script type="text/javascript" src="main.js"></script>
   <script type="text/javascript" src="foodData.js"></script>

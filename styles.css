@@ -12,51 +12,117 @@ html {
   background-size: cover;
   font-family: 'Roboto', sans-serif;
   }
-body {
 
-}
 .hidden {
   display: none;
 }
+
 nav {
   background: #0fb9b1;
   height: 83px;
   overflow: hidden;
   position: relative;
   display: flex;
+  justify-content: space-between;
+}
 
+h1 {
+margin-top: 1.5%;
+margin-left: 1%;
 }
-/*boxes*/
-section {
-  background: rgba(225, 225, 225, .9);
-  margin-top: 4%;
-  width: 36%;
-  height: 39%;
-  display: inline-flex;
-  justify-content: center;
-  flex-direction: column;
 
-}
-.radio {
-
-}
-img {
-  max-width: 1500px;
-  width: 25%;
-}
 .asterisk {
   color: #ee5253;
 }
-/*buttons*/
-.add-recipe-button {
-  background: #95a5a6;
-  position: absolute;
-  flex-direction: row;
 
+.box {
+display: flex;
+justify-content: center;
+margin-top: 3%;
 }
+
+section {
+  background: rgba(225, 225, 225, .9);
+}
+
+.sec-one {
+margin-right: 10%;
+box-sizing: border-box;
+width: 30%;
+padding-left: 2%;
+padding-bottom: 3%;
+padding-top: 3%;
+}
+
+.sec-two {
+margin-left: 10%;
+box-sizing: border-box;
+width: 30%;
+position: relative;
+}
+
+h3 {
+  font-style: italic;
+  font-size: medium;
+  text-align: center;
+  margin-top: 85px;
+  margin-bottom: 0;
+}
+
+h4 {
+  justify-content: center;
+  display: flex;
+  margin-top: 3px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.5rem
+}
+
+img {
+  max-width: 1500px;
+  width: 25%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20%;
+}
+
+button {
+  border-radius: 4px;
+  border: none;
+}
+
+.add-recipe-button {
+  background: #EFEFEF;
+  box-sizing: border-box;
+  max-height: 32px;
+  margin-top:1.5%;
+  margin-right: 1%
+}
+
 .lets-cook {
   background: #0fb9b1;
+  box-sizing: border-box;
+  width: 175px;
+  height: 30px;
 }
+
 .clear-button {
-  background: #0fb9b1;
+  background: #95a5a6;
+  color: white;
+  position: static;
+  margin-left: 325px;
+  margin-top: 25px;
+  width: 70px;
+  height: 30px;
+}
+
+input {
+  margin-bottom: 4%
+}
+
+.food-selection {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15%;
+  position: relative;
 }

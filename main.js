@@ -4,7 +4,6 @@ var mainDishRadio = document.querySelector('.main-dish');
 var dessertRadio = document.querySelector('.dessert');
 var entireMealRadio = document.querySelector('.entire-meal');
 var letsCookButton = document.querySelector('.lets-cook');
-
 var foodSelection = document.querySelector('.food-selection');
 var yourMealChoice = document.querySelector('.your-meal-choice');
 var sectionTwo = document.querySelector('.sec-two');
@@ -29,7 +28,6 @@ entireMealRadio.addEventListener('click', grabEntireMeal);
 function mealRandomizer(array) {
   return Math.floor(Math.random() * array.length);
 };
-
 function grabSide() {
   selectedDish = sides[mealRandomizer(sides)];
   return selectedDish;
@@ -50,10 +48,10 @@ function grabEntireMeal() {
 function switchView() {
 potImage.classList.add('hidden');
 foodSelection.classList.remove('hidden');
+clearButton.classList.remove('hidden');
 }
 
 function displayMeal() {
-//  potImage.classList.add('hidden');
 switchView();
 
   if (sideRadio.checked) {
@@ -66,11 +64,3 @@ switchView();
     return yourMealChoice.innerText = `${main} with a side of ${side} and ${dessert} for dessert!`;
   }
 }
-
-  //yourFoodSelection.innerHTML = `
-  //<section class="food">
-  //<h3>You should make:</h3>
-  //<h4>${selectedDish}</h4>
-  //<button class="clear-button" type="button">CLEAR</button></section>
-//  `
-//};
