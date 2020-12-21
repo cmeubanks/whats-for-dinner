@@ -24,3 +24,5 @@ Github Pages Link: https://cmeubanks.github.io/whats-for-dinner/
 
 ##### Contributors:
 Caroline Eubanks
+
+![](https://media.giphy.com/media/jc4bv3vIGzrP6hmjnO/giphy.gif)
